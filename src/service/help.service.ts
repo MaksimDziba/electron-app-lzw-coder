@@ -5,10 +5,7 @@ const compressFile = (file: Blob, callback: (size: number) => void) => {
 
   reader.onload = (fileData: ProgressEvent<FileReader>) => {
     if (fileData?.target?.result) {
-      // @ts-ignore
       const encoded = compress(fileData.target.result as string);
-
-      // TODO: поменять библиотеку т.к. encode файл не сжимается(сжимается, но encode файл равен исходному)
 
       const encodeFile = new Blob([encoded], { type: "text/plain" });
 
@@ -26,7 +23,6 @@ const decompressFile = (file: Blob, callback: (size: number) => void) => {
 
   reader.onload = (fileData) => {
     if (fileData?.target?.result) {
-      // @ts-ignore
       const encoded = decompress(fileData.target.result as string);
 
       const encodeFile = new Blob([encoded], { type: "text/plain" });
