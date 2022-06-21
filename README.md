@@ -8,6 +8,8 @@ npm run electron:start
 
 ## Сборка
 
+!!! Для сборки в windows требуются полные права для текущего пользователя на папку !temp_system (у меня это на диске D:)
+
 npx electron-forge import
 
 npx electron-forge make
