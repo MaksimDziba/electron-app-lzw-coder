@@ -1,11 +1,21 @@
 # Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Запуск
 
-## Recommended IDE Setup
+npm install
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+npm run electron:start
 
-## Type Support For `.vue` Imports in TS
+## Сборка
+
+npx electron-forge import
+
+npx electron-forge make
+
+// Example for macOS
+out/
+├── out/make/zip/darwin/x64/my-electron-app-darwin-x64-1.0.0.zip
+
+## Окно приложения
 
 ![electron coder lzw](https://github.com/MaksimDziba/electron-app-lzw-coder/blob/master/win%20app%20coder.jpg)
